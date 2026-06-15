@@ -1,9 +1,8 @@
-import { Phone, Mail, Clock, Paintbrush, ArrowRight, Building2 } from "lucide-react"
+import { Phone, Mail, Clock, Paintbrush, ArrowRight } from "lucide-react"
 import { FaFacebook, FaInstagram, FaTwitter } from "react-icons/fa"
 import "./Footer.css"
 
 const LINKS = ["About Us", "Our Projects", "Contacts"]
-const BOTTOM_LINKS = []
 
 export default function Footer() {
   return (
@@ -81,7 +80,7 @@ export default function Footer() {
             <ul>
               {LINKS.map((l) => (
                 <li key={l}>
-                  <a href="#">
+                  <a href="/">
                     <ArrowRight size={14} /> {l}
                   </a>
                 </li>
@@ -111,13 +110,13 @@ export default function Footer() {
           </div>
 
           <div className="footer__socials">
-            <a href="#" aria-label="Facebook">
+            <a href="/" aria-label="Facebook">
               <FaFacebook size={16} />
             </a>
-            <a href="#" aria-label="Instagram">
+            <a href="/" aria-label="Instagram">
               <FaInstagram size={16} />
             </a>
-            <a href="#" aria-label="Twitter">
+            <a href="/" aria-label="Twitter">
               <FaTwitter size={16} />
             </a>
           </div>

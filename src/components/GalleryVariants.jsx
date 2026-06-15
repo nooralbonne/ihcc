@@ -67,14 +67,14 @@ export function ProjectCarousel({ project }) {
       <button
         className="carousel__arrow carousel__arrow--prev"
         onClick={() => go(active - 1)}
-        aria-label="Previous photo"
+        aria-label="Previous"
       >
         <ChevronLeft size={20} />
       </button>
       <button
         className="carousel__arrow carousel__arrow--next"
         onClick={() => go(active + 1)}
-        aria-label="Next photo"
+        aria-label="Next"
       >
         <ChevronRight size={20} />
       </button>
@@ -102,7 +102,7 @@ export function ProjectCarousel({ project }) {
               e.stopPropagation()
               prevZoom()
             }}
-            aria-label="Previous photo"
+            aria-label="Previous"
           >
             <ChevronLeft size={26} />
           </button>
@@ -118,7 +118,7 @@ export function ProjectCarousel({ project }) {
               e.stopPropagation()
               nextZoom()
             }}
-            aria-label="Next photo"
+            aria-label="Next"
           >
             <ChevronRight size={26} />
           </button>

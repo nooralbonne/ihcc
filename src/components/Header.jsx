@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react"
 import { NavLink } from "react-router-dom"
-import { Phone, Mail, Clock, ChevronDown, Menu, X, Search } from "lucide-react"
+import { Phone, Mail, ChevronDown, Menu, X, Search } from "lucide-react"
 import "./Header.css"
 
 const NAV_LINKS = [
