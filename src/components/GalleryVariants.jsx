@@ -6,6 +6,7 @@ function PhotoSlot({ index, label, src }) {
   return (
     <div className="slot" aria-label={src ? `${label} photo ${index + 1}` : `${label} photo ${index + 1} placeholder`}>
       {src ? (
+        // eslint-disable-next-line jsx-a11y/img-redundant-alt
         <img src={src} alt={`${label} photo ${index + 1}`} />
       ) : (
         <>
