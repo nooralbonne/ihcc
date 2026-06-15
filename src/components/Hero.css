@@ -1,0 +1,142 @@
+.hero {
+  position: relative;
+  min-height: 620px;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+}
+
+.hero__slide {
+  position: absolute;
+  inset: 0;
+  background-size: cover;
+  background-position: center;
+  opacity: 0;
+  transform: scale(1.08);
+  transition: opacity 1s ease, transform 7s ease;
+}
+
+.hero__slide--active {
+  opacity: 1;
+  transform: scale(1);
+}
+
+.hero__overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    90deg,
+    rgba(10, 32, 66, 0.92) 0%,
+    rgba(15, 46, 92, 0.78) 45%,
+    rgba(15, 46, 92, 0.35) 100%
+  );
+}
+
+.hero__content {
+  position: relative;
+  z-index: 2;
+  padding-block: 60px;
+}
+
+.hero__eyebrow {
+  display: inline-block;
+  font-family: var(--font-head);
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: var(--yellow);
+  font-size: 0.95rem;
+  margin-bottom: 18px;
+  padding-left: 4px;
+  border-left: 4px solid var(--yellow);
+  padding-left: 12px;
+}
+
+.hero__title {
+  color: var(--white);
+  font-size: clamp(2.4rem, 6vw, 4.4rem);
+  font-weight: 800;
+  margin-bottom: 22px;
+  text-wrap: balance;
+}
+
+.hero__title span {
+  display: block;
+}
+
+.hero__text {
+  color: rgba(255, 255, 255, 0.88);
+  font-size: 1.08rem;
+  max-width: 520px;
+  margin-bottom: 34px;
+}
+
+.hero__actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
+.hero__arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 3;
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  border: none;
+  background-color: rgba(255, 255, 255, 0.92);
+  color: var(--navy);
+  display: grid;
+  place-items: center;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.hero__arrow:hover {
+  background-color: var(--yellow);
+}
+
+.hero__arrow--left {
+  left: 24px;
+}
+.hero__arrow--right {
+  right: 24px;
+}
+
+.hero__dots {
+  position: absolute;
+  bottom: 28px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 3;
+  display: flex;
+  gap: 10px;
+}
+
+.hero__dot {
+  width: 34px;
+  height: 5px;
+  border-radius: 3px;
+  border: none;
+  background-color: rgba(255, 255, 255, 0.4);
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.hero__dot--active {
+  background-color: var(--yellow);
+}
+
+@media (max-width: 768px) {
+  .hero {
+    min-height: 520px;
+  }
+  .hero__arrow {
+    display: none;
+  }
+  .hero__overlay {
+    background: linear-gradient(180deg, rgba(10, 32, 66, 0.85), rgba(15, 46, 92, 0.7));
+  }
+}

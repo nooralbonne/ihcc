@@ -1,0 +1,313 @@
+.footer {
+  position: relative;
+  background-color: var(--navy);
+  color: rgba(255, 255, 255, 0.7);
+}
+
+/* Top contact bar (sits on white background) */
+.footer__topbar {
+  background-color: var(--white);
+  padding: 64px ;
+}
+
+.footer__topbar-inner {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 32px;
+  justify-content: center;
+  padding-bottom: 24px;
+}
+
+.footer__contact-item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.footer__contact-icon {
+  display: grid;
+  place-items: center;
+  width: 42px;
+  height: 42px;
+  border-radius: 4px;
+  background-color: var(--yellow);
+  color: var(--navy-dark);
+  flex-shrink: 0;
+}
+
+.footer__contact-item small {
+  display: block;
+  color: var(--gray-500);
+  font-size: 0.78rem;
+}
+
+.footer__contact-item strong {
+  color: var(--navy);
+  font-size: 0.95rem;
+}
+
+/* Main footer body */
+.footer__main {
+  padding-block: 0 64px;
+}
+
+.footer__grid {
+  display: grid;
+  grid-template-columns: 320px 1.3fr 1fr 1.2fr;
+  gap: 40px;
+  align-items: start;
+}
+
+/* Yellow sign-up box that overlaps upward */
+.footer__signup {
+  background-color: var(--yellow);
+  color: var(--navy-dark);
+  padding: 32px 30px;
+  margin-top: -40px;
+}
+
+.footer__signup svg {
+  color: var(--white);
+  margin-bottom: 30px;
+}
+
+.footer__signup h3 {
+  color: var(--navy-dark);
+  font-size: 1.4rem;
+  font-weight: 700;
+  line-height: 1.25;
+  margin-bottom: 26px;
+}
+
+.footer__signup-form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.footer__signup-form input {
+  width: 100%;
+  padding: 14px 16px;
+  border: 1px solid rgba(10, 32, 66, 0.25);
+  background-color: transparent;
+  color: var(--navy-dark);
+  border-radius: 2px;
+  font-family: var(--font-body);
+  font-size: 0.9rem;
+}
+
+.footer__signup-form input::placeholder {
+  color: rgba(10, 32, 66, 0.55);
+}
+
+.footer__signup-form input:focus {
+  outline: none;
+  border-color: var(--navy);
+}
+
+.footer__signup-form button {
+  align-self: flex-start;
+  padding: 13px 28px;
+  background-color: var(--navy);
+  color: var(--white);
+  border: none;
+  border-radius: 2px;
+  font-family: var(--font-head);
+  font-weight: 600;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.footer__signup-form button:hover {
+  background-color: var(--navy-dark);
+}
+
+/* Columns */
+.footer__col {
+  padding-top: 40px;
+}
+
+.footer__col h4,
+.footer__about-col h4 {
+  color: var(--white);
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+.footer__about-col {
+  padding-top: 40px;
+}
+
+.footer__about-col p {
+  font-size: 0.9rem;
+  line-height: 1.7;
+  margin-bottom: 22px;
+}
+
+.footer__quote {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  color: var(--white);
+  font-family: var(--font-head);
+  font-weight: 600;
+  font-size: 1.05rem;
+}
+
+.footer__quote-icon {
+  display: grid;
+  place-items: center;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background-color: var(--yellow);
+  color: var(--navy-dark);
+  transition: transform 0.2s ease;
+}
+
+.footer__quote:hover .footer__quote-icon {
+  transform: translateX(3px);
+}
+
+.footer__col ul {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.footer__col ul a {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 0.92rem;
+  color: rgba(255, 255, 255, 0.7);
+  transition: color 0.2s ease;
+}
+
+.footer__col ul a svg {
+  color: var(--yellow);
+}
+
+.footer__col ul a:hover {
+  color: var(--yellow);
+}
+
+.footer__address {
+  font-size: 0.9rem;
+  line-height: 1.7;
+  margin-bottom: 16px;
+}
+
+.footer__phone {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  color: var(--white);
+  font-family: var(--font-head);
+  font-weight: 600;
+  font-size: 1.2rem;
+  margin-top: 6px;
+}
+
+.footer__phone svg {
+  color: var(--yellow);
+}
+
+/* Bottom bar */
+.footer__bottom {
+  background-color: var(--navy-dark);
+  padding-block: 26px 16px;
+}
+
+.footer__bottom-inner {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.footer__bottom-left {
+  display: flex;
+  align-items: center;
+  gap: 28px;
+}
+
+.footer__bottom-logo {
+  color: rgba(255, 255, 255, 0.25);
+  flex-shrink: 0;
+}
+
+.footer__bottom-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 26px;
+}
+
+.footer__bottom-links a {
+  color: rgba(255, 255, 255, 0.85);
+  font-size: 0.88rem;
+  font-weight: 500;
+  transition: color 0.2s ease;
+}
+
+.footer__bottom-links a:hover {
+  color: var(--yellow);
+}
+
+.footer__socials {
+  display: flex;
+  gap: 12px;
+}
+
+.footer__socials a {
+  display: grid;
+  place-items: center;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  color: rgba(255, 255, 255, 0.85);
+  transition: all 0.2s ease;
+}
+
+.footer__socials a:hover {
+  background-color: var(--yellow);
+  border-color: var(--yellow);
+  color: var(--navy-dark);
+}
+
+.footer__copy {
+  margin-top: 18px;
+}
+
+.footer__copy p {
+  font-size: 0.82rem;
+  color: rgba(255, 255, 255, 0.5);
+}
+
+@media (max-width: 992px) {
+  .footer__grid {
+    grid-template-columns: 1fr 1fr;
+    gap: 32px;
+  }
+  .footer__signup {
+    margin-top: 0;
+  }
+}
+
+@media (max-width: 600px) {
+  .footer__grid {
+    grid-template-columns: 1fr;
+  }
+  .footer__col,
+  .footer__about-col {
+    padding-top: 0;
+  }
+  .footer__bottom-inner {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}

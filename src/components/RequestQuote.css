@@ -1,0 +1,253 @@
+.rq {
+  position: relative;
+  background-color: var(--white);
+}
+
+/* Dark top band with the construction image */
+.rq__top {
+  position: relative;
+  background:
+    linear-gradient(rgba(10, 32, 66, 0.92), rgba(10, 32, 66, 0.92)),
+    url("../../public/images/hero-construction.png") center/cover no-repeat;
+  padding-block: 80px 150px;
+}
+
+.rq__eyebrow {
+  font-family: var(--font-head);
+  font-weight: 700;
+  color: var(--yellow);
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  font-size: 0.9rem;
+  margin-bottom: 16px;
+}
+
+.rq__top-grid {
+  display: grid;
+  grid-template-columns: 1.1fr 1fr;
+  gap: 40px;
+  align-items: center;
+  margin-bottom: 48px;
+}
+
+.rq__title {
+  color: var(--white);
+  font-size: clamp(1.9rem, 4vw, 2.9rem);
+  font-weight: 700;
+  line-height: 1.1;
+}
+
+.rq__top-text {
+  color: rgba(255, 255, 255, 0.78);
+  font-size: 0.98rem;
+  line-height: 1.7;
+}
+
+.rq__features {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 22px;
+}
+
+.rq__feature {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  padding: 28px 24px;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  color: var(--white);
+  transition: all 0.25s ease;
+}
+
+.rq__feature svg {
+  color: var(--yellow);
+}
+
+.rq__feature span {
+  font-family: var(--font-head);
+  font-weight: 600;
+  font-size: 1.15rem;
+}
+
+.rq__feature.is-active,
+.rq__feature:hover {
+  background-color: var(--yellow);
+  border-color: var(--yellow);
+  color: var(--navy-dark);
+}
+
+.rq__feature.is-active svg,
+.rq__feature:hover svg {
+  color: var(--navy-dark);
+}
+
+/* Overlapping panel */
+.rq__panel {
+  position: relative;
+  margin-top: -90px;
+  display: grid;
+  grid-template-columns: 1.6fr 1fr;
+  box-shadow: var(--shadow-md);
+  border-radius: 4px;
+  overflow: hidden;
+  margin-bottom: 88px;
+}
+
+.rq__form-card {
+  background-color: var(--white);
+  padding: 44px 40px;
+}
+
+.rq__form-card h3 {
+  font-size: 1.7rem;
+  font-weight: 700;
+  margin-bottom: 12px;
+}
+
+.rq__form-note {
+  color: var(--gray-500);
+  font-size: 0.92rem;
+  margin-bottom: 26px;
+  max-width: 90%;
+}
+
+.rq__form {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.rq__row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 18px;
+}
+
+.rq__form input,
+.rq__form select,
+.rq__form textarea {
+  width: 100%;
+  padding: 14px 16px;
+  border: 1px solid var(--gray-200);
+  border-radius: 4px;
+  font-family: var(--font-body);
+  font-size: 0.95rem;
+  color: var(--gray-700);
+  background-color: var(--gray-50);
+  transition: border-color 0.2s ease;
+}
+
+.rq__form input:focus,
+.rq__form select:focus,
+.rq__form textarea:focus {
+  outline: none;
+  border-color: var(--navy-light);
+}
+
+.rq__form textarea {
+  resize: vertical;
+}
+
+.rq__submit {
+  width: 100%;
+  justify-content: center;
+  margin-top: 4px;
+}
+
+.rq__success {
+  background-color: var(--gray-50);
+  border: 1px solid var(--yellow);
+  color: var(--navy);
+  padding: 24px;
+  border-radius: 4px;
+  font-weight: 500;
+}
+
+/* Yellow contact info card */
+.rq__contact {
+  background-color: var(--yellow);
+  color: var(--navy-dark);
+  padding: 44px 36px;
+}
+
+.rq__contact h3 {
+  color: var(--navy-dark);
+  font-size: 1.7rem;
+  font-weight: 700;
+  margin-bottom: 24px;
+}
+
+.rq__contact-block {
+  margin-bottom: 22px;
+}
+
+.rq__contact-block h4 {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: var(--navy-dark);
+  font-size: 1.1rem;
+  font-weight: 700;
+  margin-bottom: 6px;
+}
+
+.rq__contact-block p {
+  color: rgba(10, 32, 66, 0.82);
+  font-size: 0.92rem;
+  line-height: 1.6;
+}
+
+.rq__contact-help {
+  font-family: var(--font-head);
+  font-weight: 700;
+  font-size: 1.15rem;
+  color: var(--navy-dark);
+  margin-block: 24px 18px;
+  line-height: 1.3;
+}
+
+.rq__contact-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  width: 100%;
+  padding: 14px 20px;
+  background-color: var(--navy);
+  color: var(--white);
+  font-family: var(--font-head);
+  font-weight: 600;
+  border-radius: 4px;
+  transition: background-color 0.2s ease;
+}
+
+.rq__contact-btn:hover {
+  background-color: var(--navy-dark);
+}
+
+@media (max-width: 900px) {
+  .rq__top-grid {
+    grid-template-columns: 1fr;
+    gap: 16px;
+    margin-bottom: 36px;
+  }
+  .rq__features {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .rq__panel {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 560px) {
+  .rq__row {
+    grid-template-columns: 1fr;
+  }
+  .rq__features {
+    grid-template-columns: 1fr;
+  }
+  .rq__form-card,
+  .rq__contact {
+    padding: 32px 24px;
+  }
+}
